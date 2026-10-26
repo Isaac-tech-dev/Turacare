@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageShell } from "@/components/PageShell";
+import { stock } from "@/content/images";
 import { FounderPhoto } from "@/components/FounderPhoto";
 import { founder } from "@/content/content";
 
@@ -8,7 +9,7 @@ export const metadata: Metadata = { title: "Our story" };
 export default function Page() {
   return (
     <>
-      <PageShell title="Our story" intro="TuraCare is a social enterprise at the intersection of menstrual health, circular economy and gender justice.">
+      <PageShell image={stock.greenHills} title="Our story" intro="TuraCare is a social enterprise at the intersection of menstrual health, circular economy and gender justice.">
         <p>For decades, the conversation about menstrual health in Africa has been about access: who can afford a pad. That matters. But it is not the whole story. Even women who can buy menstrual products have too often been given products that were never designed with the health of the body wearing them in mind.</p>
         <p>So before designing anything, we asked. We surveyed 150 Nigerian women about what managing a period actually looked like. Not one of them used the word comfortable. Every decision since has been built from their answers.</p>
         <p>Our work runs across three connected workstreams: developing Tura EarthPant, running a continental research study, and advancing policy advocacy.</p>

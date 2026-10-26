@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageShell } from "@/components/PageShell";
+import { stock } from "@/content/images";
 import { research } from "@/content/content";
 import { site } from "@/config/site";
 
@@ -7,7 +8,7 @@ export const metadata: Metadata = { title: "Research" };
 
 export default function Page() {
   return (
-    <PageShell title="Research" intro="TuraCare is building the continental evidence base on what menstrual products are doing to women's bodies, and the accountability to act on it.">
+    <PageShell image={stock.savanna} title="Research" intro="TuraCare is building the continental evidence base on what menstrual products are doing to women's bodies, and the accountability to act on it.">
       {/* TODO: add concept note, citations and downloads once supplied by the founder */}
       <div className="space-y-8">
         {research.map((r) => (
